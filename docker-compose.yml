@@ -1,0 +1,21 @@
+services:
+
+  mongodb:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - "27017:27017"
+  api:
+    ports:
+      - "5000:5000"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - MONGODB_URL="mongodb://root:root@mongodb:27017"
+    restart: always
+    depends_on:
+      - mongodb

@@ -1,0 +1,21 @@
+Assignment
+Create a Backend application in NodeJs which will help its employee to book a meeting room as and when required. 
+
+Requirements 
+Get all available slots for a specific day
+Schedule meeting in the given slot.
+Reschedule meeting to a given slot.
+Cancel meeting if the meeting has not started
+Bulk update all meetings
+Bulk cancel all meetings
+
+Preferred Tech Stack 
+Backend: NodeJs
+Database: MongoDB[Optional]
+
+Note
+You can assume data to suit your requirements
+You should not allow overlapping meeting
+You can assume start and end time of a day(e.g. 09:00 - 18:00)
+
+
